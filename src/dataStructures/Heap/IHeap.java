@@ -1,6 +1,6 @@
 package dataStructures.Heap;
 
-public interface IHeap<K extends Comparable<K>, T> {
+public interface IHeap<T extends Comparable<T>> {
 	public void maxHeapify(int i);
 
 	public void buildMaxHeap();
@@ -9,7 +9,6 @@ public interface IHeap<K extends Comparable<K>, T> {
 
 	public void swap(int i, int j);
 
-	public int parent(int i);
 
 	public int left(int i);
 

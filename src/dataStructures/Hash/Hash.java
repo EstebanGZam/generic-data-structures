@@ -1,5 +1,7 @@
 package dataStructures.Hash;
 
+import dataStructures.ComparableNode;
+
 import java.util.ArrayList;
 public class Hash<K extends Comparable<K>, V> implements IHash<K, V> {
 	private int size;

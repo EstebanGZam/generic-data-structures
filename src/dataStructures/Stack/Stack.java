@@ -1,20 +1,20 @@
 package dataStructures.Stack;
 
-import dataStructures.Node;
+import dataStructures.SimpleNode;
 import exception.StackException;
 
 public class Stack<T> implements IStack<T> {
 
-	private Node<T> top;
+	private SimpleNode<T> top;
 	private int size = 0;
 
 	@Override
 	public void push(T value) {
-		Node<T> node = new Node<>(value);
+		SimpleNode<T> simpleNode = new SimpleNode<>(value);
 		if (!isEmpty()) {
-			node.setNext(top);
+			simpleNode.setNext(top);
 		}
-		top = node;
+		top = simpleNode;
 		size++;
 	}
 

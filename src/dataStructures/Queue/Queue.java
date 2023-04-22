@@ -1,13 +1,13 @@
 package dataStructures.Queue;
 
-import dataStructures.Node;
+import dataStructures.SimpleNode;
 import dataStructures.Stack.Stack;
 import exception.QueueException;
 
 public class Queue<T> implements IQueue<T> {
 
-	private Node<T> first;
-	private Node<T> last;
+	private SimpleNode<T> first;
+	private SimpleNode<T> last;
 	private int size = 0;
 
 	@Override
@@ -17,13 +17,13 @@ public class Queue<T> implements IQueue<T> {
 
 	@Override
 	public void enqueue(T item) throws QueueException {
-		Node<T> newNode = new Node<>(item);
+		SimpleNode<T> newSimpleNode = new SimpleNode<>(item);
 		if (isEmpty()) {
-			first = newNode;
+			first = newSimpleNode;
 		} else {
-			last.setNext(newNode);
+			last.setNext(newSimpleNode);
 		}
-		last = newNode;
+		last = newSimpleNode;
 		size++;
 	}
 
@@ -39,10 +39,10 @@ public class Queue<T> implements IQueue<T> {
 	@Override
 	public T dequeue() throws QueueException {
 		if (!isEmpty()) {
-			Node<T> firstNode = first;
+			SimpleNode<T> firstSimpleNode = first;
 			first = (first == last) ? null : first.getNext();
 			size--;
-			return firstNode.getValue();
+			return firstSimpleNode.getValue();
 		} else {
 			throw new QueueException("QueueException on dequeue: Empty queue");
 		}

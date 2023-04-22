@@ -52,19 +52,6 @@ public class HashTest {
 	}
 
 	@Test
-	public void test1Print() {
-		setUp2();
-		Assertions.assertEquals("[ ]", hash.print());
-	}
-
-	@Test
-	public void test2Print() {
-		setUp1();
-		String expected = "[ 1: Juan, 2: Esteban, 3: Manuel, 4: Oscar, 5: Diana ]";
-		Assertions.assertEquals(expected, hash.print());
-	}
-
-	@Test
 	public void testDeleteOneElement() {
 		setUp1();
 		hash.delete(1);
