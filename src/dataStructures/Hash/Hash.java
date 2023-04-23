@@ -28,7 +28,7 @@ public class Hash<K extends Comparable<K>, V> implements IHash<K, V> {
 					this.size++;
 					located = true;
 				} else if (bucketArray.get(j).getKey().compareTo(key) == 0) {
-					bucketArray.get(j).setValue(value);
+					bucketArray.get(j).setElement(value);
 					located = true;
 				}
 				if (located)
@@ -47,7 +47,7 @@ public class Hash<K extends Comparable<K>, V> implements IHash<K, V> {
 			if (node == null) {
 				stop = true;
 			} else if (node != deleted && node.getKey().equals(key))
-				return bucketArray.get(index).getValue();
+				return bucketArray.get(index).getElement();
 		}
 		return null;
 	}

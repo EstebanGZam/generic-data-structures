@@ -1,4 +1,4 @@
-package model;
+package dataStructures;
 
 
 import dataStructures.Stack.Stack;

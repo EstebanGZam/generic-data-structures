@@ -1,12 +1,12 @@
 package dataStructures.PriorityQueue;
 
 public interface IPriorityQueue<K extends Comparable<K>, T> {
-	public void insert(K key, T element);
+	void insert(K key, T element);
 
-	public T maximum();
+	T maximum();
 
-	public T extractMax();
+	T extractMax();
 
-	public void increaseKey(int i, K key);
+	void increaseKey(int i, K key);
 
 }

@@ -1,14 +1,12 @@
 package dataStructures;
 
-public class ComparableNode<K extends Comparable<K>, V> {
+public class ComparableNode<K extends Comparable<K>, E> {
 	private K key;
-	private V value;
-	private ComparableNode<K, V> next;
+	private E element;
 
-	public ComparableNode(K key, V value) {
+	public ComparableNode(K key, E element) {
 		this.key = key;
-		this.value = value;
-		next = null;
+		this.element = element;
 	}
 
 	public K getKey() {
@@ -19,12 +17,12 @@ public class ComparableNode<K extends Comparable<K>, V> {
 		this.key = key;
 	}
 
-	public V getValue() {
-		return value;
+	public E getElement() {
+		return element;
 	}
 
-	public void setValue(V value) {
-		this.value = value;
+	public void setElement(E element) {
+		this.element = element;
 	}
 
 }

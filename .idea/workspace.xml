@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd700484-a32f-460e-a2bb-bd196b119672" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/PriorityQueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exception/PriorityQueueException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Hash/ChainHash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Hash/ComparableNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/ComparableNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructures/ComparableNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/ComparableNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dataStructures/Hash/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/Hash/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Heap/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/Heap/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Heap/IHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/Heap/IHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Heap/IPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/PriorityQueue/IPriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Heap/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/NAryTree/NAryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/NAryTree/NAryTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/SimpleNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/Queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructures/Stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/Stack/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/ChainHashTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/HashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/HashTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/HeapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PriorityQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructures/PriorityQueue/IPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/PriorityQueue/IPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructures/PriorityQueue/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/PriorityQueue/PriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/HashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dataStructures/HashTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/PriorityQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dataStructures/PriorityQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dataStructures/StackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +62,12 @@
       <module name="GenericStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.HashTest" />
+      <option name="MAIN_CLASS_NAME" value="dataStructures.HashTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,28 +77,28 @@
       <module name="GenericStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.PriorityQueueTest" />
+      <option name="MAIN_CLASS_NAME" value="dataStructures.PriorityQueueTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityQueueTest.testEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PriorityQueueTest.te" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GenericStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.PriorityQueueTest" />
-      <option name="METHOD_NAME" value="testEmpty" />
+      <option name="PACKAGE_NAME" value="dataStructures" />
+      <option name="MAIN_CLASS_NAME" value="dataStructures.PriorityQueueTest" />
+      <option name="METHOD_NAME" value="te" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,12 +108,12 @@
       <module name="GenericStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.PriorityQueueTest" />
+      <option name="MAIN_CLASS_NAME" value="dataStructures.PriorityQueueTest" />
       <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -133,12 +124,12 @@
       <module name="GenericStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.StackTest" />
+      <option name="MAIN_CLASS_NAME" value="dataStructures.StackTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,10 +138,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PriorityQueueTest" />
+        <item itemvalue="JUnit.PriorityQueueTest.testInsert" />
+        <item itemvalue="JUnit.PriorityQueueTest.te" />
         <item itemvalue="JUnit.HashTest" />
         <item itemvalue="JUnit.StackTest" />
-        <item itemvalue="JUnit.PriorityQueueTest.testInsert" />
-        <item itemvalue="JUnit.PriorityQueueTest.testEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -175,11 +166,18 @@
       <workItem from="1681432267844" duration="1260000" />
       <workItem from="1681479323600" duration="684000" />
       <workItem from="1681506788811" duration="1796000" />
-      <workItem from="1682202597055" duration="3387000" />
+      <workItem from="1682202597055" duration="7860000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="dataStructures.PriorityQueueTest" memberName="priorityQueue1" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

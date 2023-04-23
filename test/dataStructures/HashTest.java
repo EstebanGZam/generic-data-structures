@@ -1,4 +1,4 @@
-package model;
+package dataStructures;
 
 import dataStructures.Hash.Hash;
 import org.junit.jupiter.api.Assertions;

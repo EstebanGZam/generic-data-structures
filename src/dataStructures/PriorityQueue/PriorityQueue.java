@@ -1,12 +1,13 @@
 package dataStructures.PriorityQueue;
 
 import dataStructures.ComparableNode;
+import exception.PriorityQueueException;
 
 import java.util.ArrayList;
 
-public class PriorityQueue<K extends Comparable<K>, V> implements IPriorityQueue<K, V> {
+public class PriorityQueue<K extends Comparable<K>, E> implements IPriorityQueue<K, E> {
 
-	private final ArrayList<ComparableNode<K, V>> A;
+	private final ArrayList<ComparableNode<K, E>> A;
 
 	public PriorityQueue() {
 		this.A = new ArrayList<>();
@@ -25,44 +26,42 @@ public class PriorityQueue<K extends Comparable<K>, V> implements IPriorityQueue
 	}
 
 	@Override
-	public V extractMax() {
+	public E extractMax() {
 		if (isEmpty()) {
-			throw new IllegalStateException("");
+			throw new PriorityQueueException("Heap underflow.");
 		}
-		ComparableNode<K, V> max = A.get(0);
+		ComparableNode<K, E> max = A.get(0);
 		A.set(0, A.get(A.size() - 1));
 		A.remove(A.size() - 1);
 		maxHeapify(0);
-		return max.getValue();
+		return max.getElement();
 	}
 
 	@Override
-	public void insert(K key, V element) {
+	public void insert(K key, E element) {
 		A.add(new ComparableNode<>(key, element));
 		increaseKey(A.size() - 1, key);
 	}
 
 	@Override
-	public V maximum() {
-		return A.get(0).getValue();
+	public E maximum() {
+		return A.get(0).getElement();
 	}
 
 	@Override
 	public void increaseKey(int i, K key) {
 		if (key.compareTo(A.get(i).getKey()) < 0) {
-			throw new IllegalStateException("");
+			throw new PriorityQueueException("New key is smaller than current key.");
 		}
 		A.get(i).setKey(key);
-		while (i > 0 && A.get(parent(i)).getKey().compareTo(A.get(i).getKey()) < 0) {
+		while (i >= 0 && A.get(parent(i)).getKey().compareTo(A.get(i).getKey()) < 0) {
 			swap(i, parent(i));
 			i = parent(i);
 		}
 	}
 
 	public void maxHeapify(int i) {
-		int l = left(i);
-		int r = right(i);
-		int largest = i;
+		int l = left(i), r = right(i), largest = i;
 		if (l < A.size() && A.get(l).getKey().compareTo(A.get(i).getKey()) > 0) {
 			largest = l;
 		}
@@ -76,7 +75,7 @@ public class PriorityQueue<K extends Comparable<K>, V> implements IPriorityQueue
 	}
 
 	public void swap(int i, int j) {
-		ComparableNode<K, V> temp = A.get(i);
+		ComparableNode<K, E> temp = A.get(i);
 		A.set(i, A.get(j));
 		A.set(j, temp);
 	}
